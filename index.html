@@ -4,35 +4,246 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Momondo - Make Your Traveling Easy</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet"/>
 
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
         <!-- Header Section Start -->
-            <header>
-                <ul>
-                    <li><a href="index.html">Momondo</a></li>
-                    <li><a href="javascript:void()" class="active">Flights</a></li>
-                    <li><a href="javascript:void()">Hotel</a></li>
-                    <li><a href="javascript:void()">Cire Hire</a></li>
-                    <li><a href="javascript:void()">trip Finder</a></li>                    
-                </ul>
-                <ul>
-                    <li><a href="#"><span class="flag-icon flag-icon-us lang"></span>English(GBP)</a></li>
-                    <li><a href="javascript:void()" style="color: greenyellow;">Log in</a></li> 
-                </ul>
-            </header>
+        <header>
+            <ul>
+                <li><a   class="logo" href="index.html"><img src="./assets/img/logo.png" alt="" width="90px" height="20px"></a></li>
+                <li><a href="javascript:void()" class="active">Flights</a></li>
+                <li><a href="javascript:void()">Hotel</a></li>
+                <li><a href="javascript:void()">Cire Hire</a></li>
+                <li><a href="javascript:void()">trip Finder</a></li>                    
+            </ul>
+            <ul>
+                <li><a href="#"><span class="flag-icon flag-icon-us lang"></span>English(GBP)</a></li>
+                <li><a href="javascript:void()" style="color: greenyellow;">Log in</a></li> 
+            </ul>
+        </header>
         <!-- /Header Section End-->
+
+        <!-- Section Start -->        
         <section class="banner">
-             <div class="tittle">
-                 <p>"The best place to find</p>
-                 <p>the cheapest airfares"</p>
-                 <h4>-every single time</h4>
-             </div>
-         </section>
+             
+                 <h1>"The best place to find <br>the cheapest airfares"</h1>
+                 <!-- <p></p> -->
+                 <h2>-every single time</h2>
+            
+            <form action="">
+                <div>
+                    <div class="switchButton">
+                        <button type="button" class="actives">
+                            <i class="fa-solid fa-plane-departure" style="padding-right:5px""></i>Flights
+                        </button>
+
+                        <button type="button">
+                            <i class="fa-solid fa-shop"></i>Hotels
+                        </button>
+
+                        <button type="button">
+                            <i class="fa-solid fa-car"></i>Cars
+                        </button>
+                    </div>
+                     <div class="searchForm">
+                        <label for="origin-city">Origin City</label>
+                        <input type="text" name="origin-city" id="origin-city" placeholder="Enter Origin City">
+
+                        <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:aqua; margin-right:5px;"></i></span>
+
+                        <label for="origin-city">Destination City</label>
+                        <input type="text" name="destination-city" id="destination-city" placeholder="Enter Destination City">
+
+                        <label for="trave-start-date">Start Date</label>
+                        <input type="date" name="trave-start-date" id="trave-start-date" placeholder="Enter Start Date">
+
+                        <label for="trave-start-date">End Date</label>
+                        <input type="date" name="trave-end-date" id="trave-end-date" placeholder="Enter end Date">
+
+                        <label for="select-passenger">Select Passenger</label>
+                        <select name="select-passenger" id="select-passenger">
+                            <option selected>Select Passenger</option>
+                            <option value="1 pass">1 Passenger</option>
+                            <option value="2 pass">2 Passenger</option>
+                            <option value="3 pass">3 Passenger</option>
+                            <option value="4 pass">4 Passenger</option>
+                            <option value="5 pass">5 Passenger</option>
+                        </select>
+                        
+                     </div>
+                     <div class="trip">
+                        <ul>
+                           <li><i class="fa-solid fa-arrows-rotate"></i>
+                                <a href="">Trip type: Return trip <i class="fa-solid fa-angle-down"></i></a>
+                            </li> 
+                                
+                            <li><i class="fa-solid fa-ticket"></i>
+                                <a href="">Ticket class:Economy <i class="fa-solid fa-angle-down"></i></a>
+                            </li> 
+                                
+                            <li>
+                                <input type="checkbox" name="" id="" class="inputt">
+                                <a href="">Direct flights only</a>
+                            </li> 
+
+                            <li>
+                                <input type="checkbox" name="" id="" class="inputt">
+                                <a href="">Include nearby airports</a>
+                            </li>
+                    </ul>
+                           
+                     </div>
+                     
+                     
+                    
+                </div> 
+                <div>
+                    <button type="submit" class="smt">Search</button>
+                </div>       
+             </form>
+        </section>
+        <!-- Section End -->
+
+        <!-- fun section starts -->
+
+        <section class="fun">
+            <h2>SOME FUN WE COVERED</h2>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-person-biking"></i>
+                    <h4>5670 M</h4>
+                    <p>CYCLING TRACK</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-route"></i>
+                    <h4>5670 M</h4>
+                    <p>DISTANCE COVERD</p>
+                </li>
+                <li>
+                    <i class="fas fa-hiking"></i>
+                    <h4>5670 M</h4>
+                    <p>ALTITUDE HIKED</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-sailboat"></i>
+                    <h4>5670 M</h4>
+                    <p>SAILING DISTANCE</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <h4>5670 M</h4>
+                    <p>SPENT ADVENTURE</p>
+                </li>
+                <li><i class="fa-solid fa-mountain-sun"></i>
+                    <h4>5670 M</h4>
+                    <p>JUNGLE DISTANCE</p>
+                </li>
+            </ul>
+        </section>
+
         
+        <section class="subscribe">
+            <div class="ddd">
+               
+            </div>
+            <div class="subscribtion">
+                <h2>SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h2>
+                <P>join our community of over 300,000 global reader's who receive emails filed with news,
+                    promotions, and other good stuff from G Adventures.
+                </P>
+                <div class="submitform">
+                    <input type="text" name="subcribeNews" id="sbNews" placeholder="Enter your email Address.....">
+                <input type="submit" value="SUBMIT">
+                </div>
+                
+        </section>
+
+        <!-- fun section end -->
+
+        <section class="destination">
+            <h2>POPULAR DESTINATION</h2>
+
+            <ul>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/subscribe.jpg" alt="">
+                    <div class="content">
+                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                        <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
         <script src="./assets/js/script.js"></script>
     </body>
