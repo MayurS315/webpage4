@@ -1,250 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Momondo - Make Your Traveling Easy</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet"/>
 
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <!-- Header Section Start -->
-        <header>
-            <ul>
-                <li><a   class="logo" href="index.html"><img src="./assets/img/logo.png" alt="" width="90px" height="20px"></a></li>
-                <li><a href="javascript:void()" class="active">Flights</a></li>
-                <li><a href="javascript:void()">Hotel</a></li>
-                <li><a href="javascript:void()">Cire Hire</a></li>
-                <li><a href="javascript:void()">trip Finder</a></li>                    
-            </ul>
-            <ul>
-                <li><a href="#"><span class="flag-icon flag-icon-us lang"></span>English(GBP)</a></li>
-                <li><a href="javascript:void()" style="color: greenyellow;">Log in</a></li> 
-            </ul>
-        </header>
-        <!-- /Header Section End-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momondo - Make Your Traveling Easy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
 
-        <!-- Section Start -->        
-        <section class="banner">
-             
-                 <h1>"The best place to find <br>the cheapest airfares"</h1>
-                 <!-- <p></p> -->
-                 <h2>-every single time</h2>
-            
-            <form action="">
-                <div>
-                    <div class="switchButton">
-                        <button type="button" class="actives">
-                            <i class="fa-solid fa-plane-departure" style="padding-right:5px""></i>Flights
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header>
+        <ul>
+            <li><a class="logo" href="index.html"><img src="./assets/img/logo.png" alt="" width="90px"
+                        height="20px"></a></li>
+            <li><a href="javascript:void()" class="active">Flights</a></li>
+            <li><a href="javascript:void()">Hotel</a></li>
+            <li><a href="javascript:void()">Cire Hire</a></li>
+            <li><a href="javascript:void()">trip Finder</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><span class="flag-icon flag-icon-us lang"></span>English(GBP)</a></li>
+            <li><a href="javascript:void()" style="color: greenyellow;">Log in</a></li>
+        </ul>
+    </header>
+    <!-- /Header Section End-->
+
+    <!-- Section Start -->
+    <section class="banner">
+
+        <h1>"The best place to find <br>the cheapest air fares"</h1>
+        <!-- <p></p> -->
+        <h2>-every single time</h2>
+
+        <form action="">
+            <div>
+                <div class="switchButton">
+                    <button type="button" class="actives">
+                        <i class="fa-solid fa-plane-departure" style="padding-right:5px""></i>Flights
                         </button>
 
-                        <button type="button">
+                        <button type=" button">
                             <i class="fa-solid fa-shop"></i>Hotels
-                        </button>
+                    </button>
 
-                        <button type="button">
-                            <i class="fa-solid fa-car"></i>Cars
-                        </button>
-                    </div>
-                     <div class="searchForm">
-                        <label for="origin-city">Origin City</label>
-                        <input type="text" name="origin-city" id="origin-city" placeholder="Enter Origin City">
-
-                        <span><i class="fa-solid fa-arrow-right-arrow-left" style="color:aqua; margin-right:5px;"></i></span>
-
-                        <label for="origin-city">Destination City</label>
-                        <input type="text" name="destination-city" id="destination-city" placeholder="Enter Destination City">
-
-                        <label for="trave-start-date">Start Date</label>
-                        <input type="date" name="trave-start-date" id="trave-start-date" placeholder="Enter Start Date">
-
-                        <label for="trave-start-date">End Date</label>
-                        <input type="date" name="trave-end-date" id="trave-end-date" placeholder="Enter end Date">
-
-                        <label for="select-passenger">Select Passenger</label>
-                        <select name="select-passenger" id="select-passenger">
-                            <option selected>Select Passenger</option>
-                            <option value="1 pass">1 Passenger</option>
-                            <option value="2 pass">2 Passenger</option>
-                            <option value="3 pass">3 Passenger</option>
-                            <option value="4 pass">4 Passenger</option>
-                            <option value="5 pass">5 Passenger</option>
-                        </select>
-                        
-                     </div>
-                     <div class="trip">
-                        <ul>
-                           <li><i class="fa-solid fa-arrows-rotate"></i>
-                                <a href="">Trip type: Return trip <i class="fa-solid fa-angle-down"></i></a>
-                            </li> 
-                                
-                            <li><i class="fa-solid fa-ticket"></i>
-                                <a href="">Ticket class:Economy <i class="fa-solid fa-angle-down"></i></a>
-                            </li> 
-                                
-                            <li>
-                                <input type="checkbox" name="" id="" class="inputt">
-                                <a href="">Direct flights only</a>
-                            </li> 
-
-                            <li>
-                                <input type="checkbox" name="" id="" class="inputt">
-                                <a href="">Include nearby airports</a>
-                            </li>
-                    </ul>
-                           
-                     </div>
-                     
-                     
-                    
-                </div> 
-                <div>
-                    <button type="submit" class="smt">Search</button>
-                </div>       
-             </form>
-        </section>
-        <!-- Section End -->
-
-        <!-- fun section starts -->
-
-        <section class="fun">
-            <h2>SOME FUN WE COVERED</h2>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-person-biking"></i>
-                    <h4>5670 M</h4>
-                    <p>CYCLING TRACK</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-route"></i>
-                    <h4>5670 M</h4>
-                    <p>DISTANCE COVERD</p>
-                </li>
-                <li>
-                    <i class="fas fa-hiking"></i>
-                    <h4>5670 M</h4>
-                    <p>ALTITUDE HIKED</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-sailboat"></i>
-                    <h4>5670 M</h4>
-                    <p>SAILING DISTANCE</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-mountain-sun"></i>
-                    <h4>5670 M</h4>
-                    <p>SPENT ADVENTURE</p>
-                </li>
-                <li><i class="fa-solid fa-mountain-sun"></i>
-                    <h4>5670 M</h4>
-                    <p>JUNGLE DISTANCE</p>
-                </li>
-            </ul>
-        </section>
-
-        
-        <section class="subscribe">
-            <div class="ddd">
-               
-            </div>
-            <div class="subscribtion">
-                <h2>SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h2>
-                <P>join our community of over 300,000 global reader's who receive emails filed with news,
-                    promotions, and other good stuff from G Adventures.
-                </P>
-                <div class="submitform">
-                    <input type="text" name="subcribeNews" id="sbNews" placeholder="Enter your email Address.....">
-                <input type="submit" value="SUBMIT">
+                    <button type="button">
+                        <i class="fa-solid fa-car"></i>Cars
+                    </button>
                 </div>
-                
-        </section>
+                <div class="searchForm">
+                    <label for="origin-city">Origin City</label>
+                   
+                    <input type="text" name="origin-city" placeholder="Enter Origin City">
 
-        <!-- fun section end -->
+                    <span><i class="fa-solid fa-arrow-right-arrow-left"
+                            style="color:aqua; margin-right:5px;"></i></span>
 
-        <section class="destination">
-            <h2>POPULAR DESTINATION</h2>
+                    <label for="origin-city">Destination City</label>
+                    <input type="text" name="destination-city"
+                        placeholder="Enter Destination City">
 
-            <ul>
-                <li>
-                    <img src="./assets/img/2.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$999</span> Rome,florence & venice island<br>9-Night Vacation W/Air</h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
+                    <label for="trave-start-date">Start Date</label>
+                    <input type="date" name="trave-start-date" placeholder="Enter Start Date">
+
+                    <label for="trave-start-date">End Date</label>
+                    <input type="date" name="trave-end-date" placeholder="Enter end Date">
+
+                    <label for="select-passenger">Select Passenger</label>
+                    <select name="select-passenger" id="select-passenger">
+                        <option selected>Select Passenger</option>
+                        <option value="1 pass">1 Passenger</option>
+                        <option value="2 pass">2 Passenger</option>
+                    </select>
+
+                </div>
+                <div class="trip">
+                    <ul>
+                        <li><i class="fa-solid fa-arrows-rotate"></i>
+                            <!--  -->
+                            <select name="">
+                                <option selected>Trip type: Return trip</option>
+                                <option value="1 pass">1 Passenger</option>
+                                <option value="2 pass">2 Passenger</option>
+                                <option value="3 pass">3 Passenger</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-ticket"></i>
+                            <select name="">
+                                <option selected>Ticket class:Economy</option>
+                                <option value="1 pass">Premium Economy</option>
+                                <option value="2 pass">Business</option>
+                                <option value="3 pass">Firts Class</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="" id="" class="inputt">
+                            <a href="">Direct flights only</a>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="" id="" class="inputt">
+                            <a href="">Include nearby airports</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+            <div>
+                <button type="submit" class="smt">Search</button>
+            </div>
+        </form>
+    </section>
+    <!-- Section End -->
+
+    <!-- fun section starts -->
+
+    <section class="fun">
+        <h2>SOME FUN WE COVERED</h2>
+        <ul>
+            <li>
+                <i class="fa-solid fa-person-biking"></i>
+                <h4>5670 M</h4>
+                <p>CYCLING TRACK</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-route"></i>
+                <h4>5670 M</h4>
+                <p>DISTANCE COVERD</p>
+            </li>
+            <li>
+                <i class="fas fa-hiking"></i>
+                <h4>5670 M</h4>
+                <p>ALTITUDE HIKED</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-sailboat"></i>
+                <h4>5670 M</h4>
+                <p>SAILING DISTANCE</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-mountain-sun"></i>
+                <h4>5670 M</h4>
+                <p>SPENT ADVENTURE</p>
+            </li>
+            <li><i class="fa-solid fa-mountain-sun"></i>
+                <h4>5670 M</h4>
+                <p>JUNGLE DISTANCE</p>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="subscribe">
+        <div class="ddd">
+
+        </div>
+        <div class="subscribtion">
+            <h2>SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h2>
+            <P>join our community of over 300,000 global reader's who receive emails filed with news,
+                promotions, and other good stuff from G Adventures.
+            </P>
+            <div class="submitform">
+                <input type="text" name="subcribeNews" id="sbNews" placeholder="Enter your email Address.....">
+                <input type="submit" value="SEARCH">
+            </div>
+
+    </section>
+
+    <!-- fun section end -->
+
+    <section class="destination">
+        <h2>POPULAR DESTINATION</h2>
+
+        <ul>
+            <li>
+                <img src="./assets/img/2.jpg" alt="">
+                <div class="content">
+                    <h4><span>$999</span> Rome,florence & venice island<br>9-Night Vacation W/Air</h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/1.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$1699</span> Australia; Sydney & Fiji Vacation w/Air, Save <span>$550</span></h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/4.jpeg" alt="">
-                    <div class="content">
-                        <h4><span>$1699</span> Greek Islands 8-Night Vacation w/Air, Save <span>$550</span></h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/3.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$899</span> Ireland & Germany 6-Night Adventure w/Ac</h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/subscribe.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/subscribe.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/7.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/img/8.jpg" alt="">
-                    <div class="content">
-                        <h4><span>$1942</span> & Up Turkey 8-Nt. Trip w/Air<br>Guided Tours & Hotels</h4>
-                        <p>This is the owest price we've seen in four years for a nine-nights.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit fuga quibusdam sint, option.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </section>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/1.jpg" alt="">
+                <div class="content">
+                    <h4><span>$1699</span> Australia; Sydney & Fiji Vacation w/Air, Save <span>$550</span></h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/4.jpeg" alt="">
+                <div class="content">
+                    <h4><span>$1699</span> Greek Islands 8-Night Vacation w/Air, Save <span>$550</span></h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/3.jpg" alt="">
+                <div class="content">
+                    <h4><span>$899</span> Ireland & Germany 6-Night Adventure w/Ac</h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/subscribe.jpg" alt="">
+                <div class="content">
+                    <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/subscribe.jpg" alt="">
+                <div class="content">
+                    <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/7.jpg" alt="">
+                <div class="content">
+                    <h4><span>$999</span> Home,florence & vehice island<br>9-Night Vacation Non Ac/Ac</h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/8.jpg" alt="">
+                <div class="content">
+                    <h4><span>$1942</span> & Up Turkey 8-Nt. Trip w/Air<br>Guided Tours & Hotels</h4>
+                    <p>This is the owest price we've seen in four years for a nine-nights.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aliquam laborum suscipit
+                        fuga quibusdam sint, option.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
+    <section class="estimate">
+        <div class="est">
+            <h3>GET A QUICK ESTIMATE!</h3>
+            <p>GET A PROFESSIONAL HELP</p>
+            <hr>
+        </div>
+
+        <form action="">
+            <label for="">Purpose</label>
+            <select name="cars" id="cars">
+
+                <option value="Travel Purpose">Travel Purpose</option>
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="saab">3</option>
+            </select>
+
+            <label for="">Purpose</label>
+            <input type="date" name="Travel Date" id="" placeholder="Travel Date">
+
+
+            <label for="">Purpose</label>
+            <select name="cars" id="cars">
+
+                <option value="Travel Purpose">Number of people</option>
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="saab">3</option>
+            </select>
+            <label for="">Purpose</label>
+            <input type="text" name="email" placeholder="email" id="">
+            <button>
+                CALCULATE NOW
+            </button>
+        </form>
+    </section>
+
+    <!-- blog section -->
+    <section class="blog">
+        <h2>LATEST BLOG</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni, perferendis minima exercitationem fugit
+            maxime porro, debitis veritatis et ad quo quae harum ipsam molestiae laboriosam! Sunt culpa modi dolorem,
+            saepe amet, labore quis quidem molestias vel facilis debitis optio! Nemo animi eum error distinctio! Aperiam
+        </p>
+        <div>
+      
+        <!-- <img src="./assets/img/logo.png" alt="blog1"> -->
         
+            
+        <div>
+            <p>Feb 01 2023</p>
+            <h3>10 Things To Do before Travel</h3>
+            <p class="bdr">&nbsp; &nbsp;&nbsp;&nbsp;</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae! Placeat quae suscipit ad recusandae neque odio, nemo magni doloribus, optio ipsa velit odit sunt excepturi eum esse eligendi?
+            </p>
+        </div>
+        </div>
+    </section>
+    <!-- blog section -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-        <script src="./assets/js/script.js"></script>
-    </body>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="upper_design">
+            <div class="countries">
+                <h4>Top Countries</h4>
+                <ul>
+                    <li> 
+                       <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> United States</p></a> 
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> United Kingdom</p></a>
+                    </li>
+                    <li> 
+                       <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> Spain</p></a> 
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> Thailand</p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> India</p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> Italy</p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> Germany</p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> Denmark</p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> France</p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-globe"></i> <span>Flights to</span> Australia</p></a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+            <div class="cities">
+                <h4>Top Cities</h4>
+                <ul>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> London <span>United kingdom</span></p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> New york <span>United States</span></p></a>
+                    </li>
+                    <li> 
+                       <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Bangkok <span>Thailand</span></p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Copenhagen <span>Denmark</span></p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Orlando <span>United States</span></p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Paris <span>France</span></p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Dubai <span>United Arab Emirates</span></p></a>
+                    </li>
+                    <li> 
+                       <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Singapore <span>Singapore</span></p></a> 
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Istambul <span>turkey</span></p></a>
+                    </li>
+                    <li> 
+                        <a href="#"><p><i class="fa-solid fa-location-dot"></i> <span>Flights to</span> Hong Kong <span>Hong Kong</span></p></a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+            <div class="int_sites">
+                <h4>International Sites</h4>
+                <div class="lists">
+                    <ul class="one">
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-us lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-ba lang"></span>  London </p>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-ca lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-au lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-ae lang"></span>  London </p></a>
+                        </li>
+                    </ul>
+
+                    <ul class="two">
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-us lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-us lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-us lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-us lang"></span>  London </p></a>
+                        </li>
+                        <li> 
+                            <a href="#"><p><span class="flag-icon flag-icon-us lang"></span>  London </p></a>
+                        </li>
+                    </ul>
+                </div>         
+            </div>
+        </div>
+        
+        <div class="lower_design">
+            <div class="logo1">
+
+            </div>
+            <div class="footer_tabs">
+                
+                <ul>
+                    <li>About Us</li>
+                    <li>Jobs</li>
+                    <li>Press</li>
+                    <li>Affliate</li>
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>Airlines</li>
+                    <li>Apps</li>
+                    <li>Help</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam commodi eius commodi eius</p>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#"><i class="fa-brands      fa-facebook"></i>
+                </a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>

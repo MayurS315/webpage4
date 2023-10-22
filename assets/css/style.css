@@ -53,7 +53,7 @@ header ul li a.active{
     height:650px;
     background-color: gray;
     padding: 0px 125px;
-    background-image:url(../img/banner2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(../img/banner2.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -61,7 +61,7 @@ header ul li a.active{
 
 .banner h1{
     top:100px;
-    font-size: 50px;
+    font-size: 38px;
     position: absolute;
     font-weight: normal;
     font-family: 'poppins';
@@ -86,6 +86,10 @@ header ul li a.active{
     background: #5c327A;
 }
 
+
+
+ 
+
 .banner form button{
     width:90px;
     height:30px;
@@ -107,19 +111,27 @@ header ul li a.active{
     margin-top:8px;
 }
 
+.banner form .searchForm input[type="text"]::placeholder{
+    text-align: center;
+}
+
 .banner form .searchForm input,
 .banner form .searchForm select{
-    width:200px;
+    width:290px;
     height:35px;
     margin-right:5px;
     
 }
 
+.banner form .searchForm input[type="date"]{
+    width:132px;
+}
+
 .banner form button.smt{
-    width:90px;
-    height:90px;
+    width:85px;
+    height:85px;
     border-radius:50%;
-    margin-left: 100px;
+    margin-left: 25px;
     background-color: #ff4f7b;
     cursor: pointer;
 }
@@ -135,15 +147,26 @@ header ul li a.active{
     color:#fff;
     text-decoration: none;
     list-style: none;
-    padding-left: 10px;
 }
 
 .trip ul li{
-    padding-left: 20px;
+    padding-right:15px;
 }
 .trip ul li a{
     color:#fff;
     
+}
+.trip ul li select{
+    background:none;
+    color:#fff;border: 0px;
+}
+
+.trip ul li select option{
+    color: #000;
+}
+
+.trip ul li input[type="checkbox"]{
+    background: none;
 }
 
 /* fun section css */
@@ -198,7 +221,7 @@ header ul li a.active{
     width:100%;
     height:400px;
     padding: 50px 125px;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/subscribe.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.6),rgba(113, 27, 194, 0.6)),url(../img/subscribe.jpg);
     /* background-color: grey; */
     background-size: 100% 100%;
     display: flex;
@@ -220,7 +243,14 @@ header ul li a.active{
     /* flex-direction: column; */
 }
 
-.subscribtion p, h2{
+.subscribtion >p{
+    padding: 7px 0px 7px 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family:'poppins';
+}
+.subscribtion >h2{
     padding: 7px 0px 7px 0px;
     color: #fff;
     font-size: 20px;
@@ -247,7 +277,7 @@ header ul li a.active{
     margin-top: 10px;
     width: 100px;
     height: 40px;
-   
+   cursor: pointer;
     border: 2px solid #fff;
 }
 
@@ -258,6 +288,10 @@ header ul li a.active{
     color:#fff;
     padding: 50px 125px;
     background:#20162F;
+}
+
+.destination h2{
+    text-align: center;
 }
 
 .destination ul{
@@ -294,3 +328,212 @@ header ul li a.active{
     margin-top: 20px;
 }
 
+.estimate
+{
+    width:100%;
+    height:300px;
+    padding: 50px 125px;    
+    background:url(../img/estimates.jpg);
+    background-size: 100% 100%;
+    
+   
+    /* background: no-repeat; */
+    /* background-color:#6A4BAC; */
+    /* background-color:#fe9102; */
+}
+
+.est {
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    margin-bottom:20px;
+    font-family: 'poppins';
+    font-size:20px;
+}
+.est hr{
+    width:5%;    
+}
+
+.estimate form{
+    width:100%;
+}
+
+.estimate form label{
+    display: none;
+}
+
+.estimate form select,button
+{
+    width:15%;
+    height:35px;
+    
+}
+
+.estimate form input
+{
+    width:15%;
+    height:35px;
+}
+
+.estimate form button{
+     border: hidden;
+        width:12%;
+        height:35px;
+      background-color:#fe9102;
+}
+
+.blog{
+    width:100%;
+    height: auto;
+    padding: 50px 125px;
+
+}
+.blog h2{
+    color:#000;
+}
+
+
+
+
+.footer{
+    width:100%;
+    height:590px;
+    padding: 50px 125px;
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(10, 10, 10, 1.0)),url(../img/subscribe.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins';
+}
+
+.upper_design{
+    display: flex;
+    /* font-family: 'poppins'; */
+}
+.countries{
+    width:33.3%;
+    text-align: left;
+    color:#ffff;
+}
+
+.countries ul{
+    margin-top: 20px;
+}
+.countries ul li{
+  list-style-type:none;
+  padding: 2px;
+  
+}
+
+.countries ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.countries ul li p i,span{
+    color:#808080;
+}
+
+.cities{
+    width:33.3%;
+    text-align: left;
+    color:#ffff;
+}
+
+.cities ul{
+    margin-top: 20px;
+}
+
+.cities ul li{
+    list-style-type:none;
+    padding: 2px;
+    
+  }
+
+  .cities ul li a{
+    color:#fff;
+    text-decoration: none;
+  }
+  
+.cities ul li p i,span{
+    color:#808080;
+}
+
+.int_sites{
+    width:33.3%;
+    text-align: left;
+    color:#ffff;
+    display: flex;
+    flex-direction:column;
+}
+.lists {
+    display:flex;
+    /* justify-content: space-around; */
+}
+
+.lists ul{
+    margin-top: 20px;
+}
+
+.one a{
+    color:#fff;
+    text-decoration: none;
+}
+.two{
+    margin-left: 85px;
+}
+
+.one, .two a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.lists ul li{
+    list-style-type:none;
+    padding: 2px;   
+  }
+
+  .lower_design{
+    display: flex;
+    margin-top: 70px;
+  }
+
+  .logo1{
+    width:14%;
+    height: 113px;
+    background:url(../img/logo1.png);
+    background-size: 100% 100%;
+  }
+
+  .footer_tabs{
+    width:61%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer_tabs ul li{
+    color:#fff;
+    display: inline-block;
+    padding-left:10px;
+  }
+  .footer_tabs p{
+    margin-top: 10px;
+    color: #ffff;
+  }
+
+  .social{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social a i{
+    background-color: white;
+    border-radius: 13px;
+    color:#000;
+    
+    padding: 5px;
+    margin-left: 20px;
+  }  
